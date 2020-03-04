@@ -1,0 +1,57 @@
+
+.main_slider_area{
+    .learn_btn{
+        padding: 0px 33px;
+    }
+    .slider_btn{
+        padding: 0px 35px;
+        line-height: 46px;
+        border: 2px solid transparent;
+        &.btn_transparent{
+            background: transparent;
+            border: 2px solid #fff;
+            margin-left: 20px;
+            &:hover{
+                background: #e2a062;
+                border-color: #e2a062;
+            }
+        }
+    }
+}
+
+/* Start main_slider_area_two css
+============================================================================================ */
+.main_slider_area_two{
+    position: relative;
+    .learn_btn{
+        background: #38373d;
+        border: 1px solid transparent;
+        &.btn_transparent{
+            margin-left: 18px;
+            background: transparent;
+            border: 1px solid #fff;
+            &:hover{
+                background: #2d2d32;
+                border-color: #2d2d32;
+            }
+        }
+        &:hover{
+            background: #2d2d32;
+        }
+    }
+}
+
+/* End main_slider_area_two css
+============================================================================================ */
+
+.main_slider_area_four{
+    .learn_btn{
+        &.btn_transparent{
+            margin-left: 18px;
+            background: #1c1c1c;
+            &:hover{
+                background: #2d2d32;
+            }
+        }
+    }
+}

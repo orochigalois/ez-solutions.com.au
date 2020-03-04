@@ -1,0 +1,646 @@
+/*
+Theme Name: Sorbroix
+Theme URI: http://shtheme.com/demosd/sorbroix1
+Author: Shtheme
+Author URI: https://themeforest.net/user/shtheme
+Description: In 2018, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: sorbroix
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ========TABLE OF CONTENTS==========
+00. Body, links, hgroup, paragraphs, general styles
+01. Fixed header & Navigation
+02. Section Intro (Home)
+03. Section About
+04. Section Resume
+05. Section Portfolio
+06. Section Blog
+07. Section Contact
+08. Footer
+09. Loader
+10. Responsive design
+
+/*--------------------------------------------------
+    00. Body, links, hgroup, paragraphs, general styles
+---------------------------------------------------*/
+
+a {
+    color: #333;
+}
+#calendar_wrap {
+    width: 263px;
+}
+body {
+    font-size: 17px;
+    color: #797979!important;
+    }
+.widget_calendar {
+    float: none;
+}
+#wp-calendar {
+    width: 100%; 
+}
+#wp-calendar caption { 
+    background: none repeat scroll 0 0 #E9E9E9;
+    color: #333333;
+    font-size: 17px;
+    padding: 10px 0;
+    text-align: center; 
+}
+#wp-calendar thead {
+ font-size: 10px; 
+}
+#wp-calendar thead th {
+    border: 1px solid #E9E9E9;
+    font-size: 13px;
+    padding: 8px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+#wp-calendar tbody { 
+    color: #aaa; 
+}
+#wp-calendar tbody td { 
+    background: #f5f5f5; 
+    border: 1px solid #E9E9E9; 
+    text-align: center; 
+    padding:8px;
+}
+#wp-calendar tbody td#today {
+    background: #e2a062; 
+    color: #fff;
+}
+#wp-calendar tbody td#today a {
+    color: #fff;
+}
+#wp-calendar tbody td:hover { 
+    background: #fff; 
+}
+#wp-calendar tbody .pad { 
+    background: none; 
+}
+#wp-calendar tfoot {
+    border: 1px solid #E9E9E9;
+}
+#wp-calendar tfoot #next { 
+    font-size: 12px; 
+    text-transform: uppercase; 
+    text-align: right; 
+    color: #83c99f;
+}
+#wp-calendar tfoot #prev { 
+    font-size: 12px; 
+    text-transform: uppercase; 
+    padding-top: 10px; 
+    color: #83c99f;
+}
+
+.widget select {
+    max-width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc; 
+    width: 100%;
+}
+.widget_text .textwidget img{
+    max-width: 100%;
+    height: auto;
+}
+.widget_text select, .widget_text input , .widget_text textarea  {
+    max-width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc; 
+    width: 100%;
+}
+.widget_text option {
+    max-width: 100%;
+}
+
+.widget_nav_menu ul li, .widget_pages ul li {
+    color: #827b7d;
+    line-height: 28px;
+}
+.widget_nav_menu ul li ul, .widget_pages ul li ul {
+    padding-left: 15px;
+}
+.widget_nav_menu ul li a, .widget_pages ul li a{
+    color: #827b7d;
+}
+.widget_nav_menu ul li a:hover, .widget_pages ul li a:hover {
+    color: #615C5C;
+}
+#sidebar .textwidget img {
+    max-width: 100%;
+}
+img{
+    width: auto !important;
+    max-width:100%;
+    height: auto;
+    margin: 10px 0px;
+}
+.wp-caption{
+    max-width:100%;
+}
+.wp-caption img{
+    padding-bottom: 5px;
+}
+.form-submit input.submit {
+    background: #e2a062;
+    line-height: 50px;
+    border-radius: 3px;
+    padding: 0px 25px;
+    display: inline-block;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px;
+    width: 172px;
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: .32px;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+    margin-left: 15px;
+}
+.form-submit input.submit:hover{
+    background: #c2874e;
+    color: #fff;
+}
+.screen-reader-text{
+    color: #333;
+}
+
+/* add */
+
+.alignright{
+    float:right;
+}
+.alignleft{
+    float:left;
+}
+
+.single-content table{ 
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 1.75em;
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #d1d1d1;
+}
+.single-content table td{
+    border: 1px solid #d1d1d1;
+    padding-left: 7px;
+} 
+.single-content table th{
+    border: 1px solid #d1d1d1;
+    padding-left: 7px;
+ }
+ .comment_text  table{ 
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 1.75em;
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #d1d1d1;
+}
+.comment_text  table td{
+    border: 1px solid #d1d1d1;
+    padding-left: 7px;
+} 
+.comment_text  table th{
+    border: 1px solid #d1d1d1;
+    padding-left: 7px;
+ }
+.single-content  li{
+  padding: 0!important;
+  list-style: inherit!important;
+ }
+.single-content  ul{
+  list-style: disc!important;
+  padding-left: 20px!important;
+ }
+.single-content  ol{
+  list-style: decimal!important;
+  padding-left: 20px!important;
+ }
+ .comment_text  li{
+  padding: 0!important;
+  list-style: inherit!important;
+ }
+.comment_text  ul{
+  list-style: disc!important;
+  padding-left: 20px!important;
+ }
+.comment_text  ol{
+  list-style: decimal!important;
+  padding-left: 20px!important;
+ }
+
+ 
+ img.alignleft, .alignleft img{
+  margin-right:10px; 
+ }
+ img.alignright, .alignright img{
+  margin-left:10px;
+ } 
+.wp-caption.aligncenter {
+    width: 100% !important;
+    text-align: center;
+}
+.search-custom form {
+    width: 70% !important;
+    padding-top: 20px;
+}
+.search-custom form.search-form:after {
+    top: 20px;
+}
+.wp-caption-text , .gallery-caption , .bypostauthor , .sticky{
+    color: #797979;
+}
+
+form.post-password-form input[type=submit] {
+    padding: 1px 5px;
+    background: #000;
+    color: #fff;
+    border-color: #000;
+    width: auto;
+}
+
+.widget ul li {
+    list-style: none !important;
+    padding-bottom: 10px;
+}
+.widget ul {
+    padding-left: 0px !important;
+}
+.widget ul.sub-menu , .widget ul.children{
+    padding-left: 10px !important;
+}
+.widget ul.sub-menu li, .widget ul.children li{
+    padding-bottom: 3px !important;
+}
+a:hover {
+    text-decoration: none !important;
+}
+ul.children{
+    margin-left: 11px;
+}
+/*add */ 
+li.featured-post {
+    color: #333;
+    font-weight: bold !important;
+    margin-right: 5px;
+}
+.wp-tag-cloud li {
+    display: inline-block;
+    padding-bottom: 0px !important;
+}
+.wp-tag-cloud li:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.wp-tag-cloud li a {
+    position: relative;
+    display: inline-block;
+    line-height: 24px !important;
+    padding: 5px 10px;
+    margin: 0px 5px 12px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #f3f3f3;
+    color: #1a1a1a;
+    text-align: center;
+    font-size: 14px !important;
+    border-radius: 0px;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+}
+.wp-tag-cloud li:hover a {
+    background-color: #e2a062;
+    border-color: #e2a062;
+    color: #ffffff !important;
+}
+p.logged-in-as {
+    padding-left: 15px;
+    padding-bottom: 25px;
+}
+p.logged-in-as a{
+    color: #888;
+}
+
+h3.archive-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.single-content h1 {
+    font-size: 52px;
+}
+.single-content h2 {
+        font-size: 34px;
+}
+.single-content h3 {
+    font-size: 26px;
+}
+.single-content h4 {
+    font-size: 22px;
+}
+.single-content h5 {
+    font-size: 20px;
+}
+.single-content h6 {
+    font-size: 18px;
+}
+.comment_text h1 {
+    font-size: 46px;
+}
+.comment_text h2 {
+        font-size: 34px;
+}
+.comment_text h3 {
+    font-size: 26px !important;
+    font-family: inherit !important;
+    font-weight: normal !important;
+    color: inherit !important;
+    padding-bottom: 0px !important;
+}
+.comment_text h4 {
+    font-size: 22px !important;
+    font-family: inherit !important;
+    font-weight: normal !important;
+    color: inherit !important;
+}
+.comment_text h5 {
+    font-size: 20px;
+}
+.comment_text h6 {
+    font-size: 18px;
+}
+body.logged-in .main_menu_area_five {
+    top: 32px;
+}
+body.logged-in .main_menu_area_four {
+    top: 32px;
+}
+body.logged-in .main_menu_area_three {
+    top: 32px;
+}
+body.logged-in .main_menu_area_three .main_menu_bg.affix .navbar .navbar-collapse {
+    margin-top: 32px;
+}
+body.logged-in .menu_inner_area.affix {
+    top: 32px;
+}
+@media screen and (max-width: 600px){
+body.logged-in .menu_inner_area.affix {
+    top: 0px;
+}
+}
+a.comment-reply-link {
+    font-weight: 500;
+    float: right;
+}
+/******/
+
+
+.banner_area .banner_inner ul li.active {
+    color: #e2a062;
+}
+.btn_appointment {
+    color: #fff !important;
+        background: #e2a062 !important;
+    height: 50px !important;
+    border-bottom: none !important;
+    border-radius: 3px !important;
+}
+.btn_subcribe {
+    height: 50px !important;
+    padding: 0px !important;
+    padding: 0px 36px !important;
+    color: #fff !important;
+    background: #292a2a !important;
+    border:none !important;
+}
+.widget_recent_comments a {
+    border-bottom: none !important;
+}
+.media .media-left img {
+    max-width: inherit;
+}
+.blog_item .blog_img.blog_full img {
+    width: 100% !important;
+}
+.business_service_content br {
+    display: none;
+}
+.tt-widget .downloads br, .tt-widget .con_info br {
+    display: none;
+}
+.wpb_revslider_element {
+    margin-bottom: 0px !important;
+}
+.client_slider, .padtop_0 {
+    padding-top: 0px;
+}
+.contact_us_form .form-group .btn_contact1{
+    background: #e2a062;
+    border-radius: 3px;
+    padding: 0px 25px;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px;
+    color: #fff !important;
+    font-family: "Montserrat", sans-serif;
+}
+.business-img img {
+    max-width: inherit;
+}
+.pagination .page-numbers.current {
+    margin: 0px;
+    padding: 0px;
+    background: #e2a062;
+    color: #fff;
+    border-color: #e2a062;
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 0px !important;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+/*Test*/
+
+.widget_archive ul li a, .widget_categories ul li a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.single-content h1 ,.single-content h2, .single-content h3, .single-content h4 ,.single-content h5 ,.single-content h6 {
+    margin: 10px 0px;
+}
+.navbar-nav>li>.dropdown-menu >li>.dropdown-menu{
+    display: none !important;
+}
+.post-password-form label {
+    margin-top: 10px;
+}
+.comment_text h1 ,.comment_text h2, .comment_text h3, .comment_text h4 ,.comment_text h5 ,.comment_text h6 {
+    margin: 10px 0px;
+}
+
+.footer-text{
+    color: white;
+    text-align: center;
+}
+
+.footer_weidget_area {
+    padding: 80px 0;
+}
+.blog_item .blog_text {
+    padding-top: 0px;
+}
+.blog_item .blog_img{
+    margin-bottom: 20px;
+}
+.blog_item_inner .blog_item{
+    margin-bottom: 45px;
+}
+li.featured-post{
+    color: #e2a062;
+    font-size: 17px;
+}
+.header_top .pull-right .header_social:before{
+    display: none;
+}
+.blog_item .blog_text h4{
+    padding-top: 0px;
+}
+#respond{
+    padding-top: 150px;
+    margin-top: -150px;
+}
+.blog_item img{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.wp-caption{
+    margin: 0 auto;
+    display: block;
+}
+
+.page-links{
+    clear: both;
+    padding-top: 7px;
+}
+.page-links a{
+    margin-left: 3px;
+}
+
+.single-content p{
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.blog_details_inner .s_comment_list .s_comment_list_inner .media .media-left{
+    overflow: hidden;
+    float: left;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+.blog_details_inner .s_comment_list .s_comment_list_inner .media .media-body{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: auto;
+    margin-top: 10px;
+}
+.s_comment_list_inner .media .media-body .date_rep a{
+    margin-top: -65px;
+}
+.banner_area{
+    background: #353637!important;
+}
+label.screen-reader-text{
+    display: none;
+}
+.single-content p{
+    padding-bottom: 10px;
+}
+.button-404{
+    margin-top: 40px;
+}
+.blog_item .blog_text > ul{
+    padding-top: 0px;
+}
+.blog_item > img{
+    margin-bottom: 33px;
+}
+.search_area .search_box_inner .input-group input::placeholder, .search_area .search_box_inner .input-group input, .search_area .search_box_inner .input-group .input-group-btn .btn-default{
+    color: #fff!important;
+}
+.r_widget_title h3{
+    font-size: 20px;
+}
+.blog_item .blog_text h4{
+    font-size: 24px;
+}
+.screen-reader-text{
+     color: #242424!important;
+    font-weight: 600;
+    font-size: 15px;
+}
+.blog_item .blog_text ul li{
+    float: left;
+}
+li.featured-post{
+    float: right!important;
+}
+.blog_item .blog_text ul li a{
+    font-weight: normal!important;
+}
+.blog_item .blog_text ul li{
+    margin-top: 4px;
+}
+
+.read_btn{
+font-size: 17px;
+}
+.blog_item .blog_text ul li:hover a:hover{
+    color: #e2a062!important;
+}
+
+.blog_item .blog_text ul li span{
+    color: #242424!important;
+    font-weight: 600;
+    font-size: 15px;
+}
+.blog_item .blog_text ul li a{
+    color: #242424!important;
+    font-weight: 600!important;
+    font-size: 15px;
+}
+.recent_widget .recent_inner .recent_item h4{
+    color: #827b7d!important;
+}
+
+.blog_item .blog_text ul li:last-child a:before{
+    display: none!important;
+}

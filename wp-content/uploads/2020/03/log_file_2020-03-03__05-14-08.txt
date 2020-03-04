@@ -1,0 +1,51 @@
+
+---Downloaded files---
+The import files for: Demo Import Sorbroix were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://ez-solutions.com.au
+Data file = /home/ezitsolution/public_html/ez-solutions.com.au/wp-content/uploads/2020/03/demo-content-import-file_2020-03-03__05-14-08.xml
+Widget file = /home/ezitsolution/public_html/ez-solutions.com.au/wp-content/uploads/2020/03/demo-widgets-import-file_2020-03-03__05-14-08.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Primary Sidebar : 
+
+sorbroix Search - No Title - Widget already exists
+sorbroix Recent Posts - No Title - Widget already exists
+Recent Comments - No Title - Widget already exists
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+
+Service Sidebar : 
+
+Text - No Title - Imported
+Text - No Title - Imported
+
+Footer One Widget Area : 
+
+Text - No Title - Imported
+
+Footer Two Widget Area : 
+
+Text - No Title - Imported
+
+Footer Three Widget Area : 
+
+Text - No Title - Imported
+
+Footer Four Widget Area : 
+
+Text - No Title - Imported
+
+
+
+---pt-ocdi/after_import---
+

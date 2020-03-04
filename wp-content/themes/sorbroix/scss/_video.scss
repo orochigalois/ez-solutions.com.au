@@ -1,0 +1,114 @@
+/* Video Area css
+============================================================================================ */
+.video_text_area{
+    
+}
+.video_bg_c{
+    background: #efefef;
+}
+.video_left_text{
+    padding-right: 5px;
+    h3{
+        font-size: 36px;
+        font-weight: bold;
+        font-family: $mon;
+        line-height: 44px;
+        color: $dip;
+        position: relative;
+        padding-bottom: 35px;
+        &:before{
+            content: "";
+            background: $baseColor;
+            width: 70px;
+            height: 3px;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+    p{
+        font-size: 17px;
+        line-height: 28px;
+        color: $pfont;
+        letter-spacing: .34px;
+        font-family: $lato;
+        padding: 28px 0px 30px 0px;
+    }
+}
+.video_box{
+    position: relative;
+    text-align: right;
+    float: right;
+    img{
+        max-width: 100%;
+    }
+    a{
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        i{
+            font-size: 64px;
+            line-height: 64px;
+            &:before{
+                font-size: 64px;
+                color: #fff;
+            }
+        }
+    }
+}
+/* End Video Area css
+============================================================================================ */
+
+/* Video Area Two css
+============================================================================================ */
+.video_area_two{}
+.video_inner{
+    .video_left_text{
+        h3{
+            color: #fff;
+        }
+        p{
+            color: #dddddd;
+        }
+        .learn_btn{
+            padding: 0px 42px;
+        }
+    }
+    .video_box{
+        .play-icon{
+            width: 98px;
+            height: 98px;
+            border-radius: 50%;
+            text-align: center;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            left: 50%;
+            margin-left: -43px;
+            transition: all 0.3s linear;
+            &:before{
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 20px 0 20px 28px;
+                border-color: transparent transparent transparent #e2a062;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:hover{
+                background: #e2a062;
+                border-color: #e2a062;
+                &:before{
+                    border-color: transparent transparent transparent #fff;
+                }
+            }
+        }
+    }
+}
+/* End Video Area Two css
+============================================================================================ */

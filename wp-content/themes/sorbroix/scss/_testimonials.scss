@@ -1,0 +1,213 @@
+/* Testimonials Area css
+============================================================================================ */
+.testimonials_area{
+    background: #e2a062;
+    overflow: hidden;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        background: url(../img/testimonials/testi-bg.png) no-repeat scroll center center;
+        background-size: cover;
+        width: 995px;
+        height: 250px;
+        opacity: .08;
+    }
+}
+.testi_inner{
+    position: relative;
+    padding: 140px 0px 75px 0px;
+    &:before{
+        content: attr(data-title);
+        position: absolute;
+        left: 0px;
+        top: -8px;
+        width: 100%;
+        text-align: center;
+        font-size: 150px;
+        color: rgba(255, 255, 255, .10);
+        font-family: $mon;
+        font-weight: bold;
+    }
+}
+.testimonial_slider{
+    overflow: hidden;
+    .testimonial_item{
+        position: relative;
+        padding-bottom: 25px;
+        &:before{
+            content: "";
+            background: rgba(255, 255, 255, .5);
+            height: 205px;
+            width: 1px;
+            position: absolute;
+            right: -113px;
+            top: 6px;
+        }
+        p{
+            padding-top: 6px;
+            img{
+                width: auto;
+                display: inline-block;
+                padding-right: 18px;
+                position: relative;
+                top: -6px;
+            }
+            font-size: 18px;
+            color: #fff;
+            font-family: $lato;
+            letter-spacing: .36px;
+            line-height: 30px;
+        }
+        .media{
+            padding-top: 35px;
+            margin-top: 0px;
+            .media-left{
+                padding-right: 25px;
+                img{
+                    width: auto;
+                }
+            }
+            .media-body{
+                vertical-align: middle;
+                h4{
+                    font-size: 18px;
+                    color: #fff;
+                    font-family: $mon;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+                h5{
+                    font-size: 16px;
+                    color: #fff;
+                    font-family: $lato;
+                }
+            }
+        }
+    }
+}
+
+/* End Testimonials Area css
+============================================================================================ */
+
+
+/* Start testimonials_area_two css
+============================================================================================ */
+.testimonials_area_two{
+    .testi_inner{
+        padding: 120px 0px 100px;   
+    }
+}
+.testimonial_slider_two{
+    .item{
+        text-align: center;
+        color: #fff;
+        img{
+            width: auto;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        p{
+            font: 400 17px/28px $lato;
+            letter-spacing: 0.34px;
+            padding-top: 20px;
+        }
+        .author{
+            margin-top: 15px;
+            h4{
+                font: 500 18px/50px $mon;
+                letter-spacing: 0.54px;
+                padding-bottom: 12px;
+            }
+        }
+    }
+}
+/* End testimonials_area_two css
+============================================================================================ */
+
+/* Start testimonial_area_three css
+============================================================================================ */
+.testimonial_area_three{
+    padding-top: 100px;
+    .testimonial_slider{
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        .testimonial_item{
+            padding-right: 115px;
+            p{
+                color: $pfont;
+            }
+            .media{
+                .media-body{
+                    h4{
+                        color: $dip;
+                    }
+                    h5{
+                        color: $pfont;
+                    }
+                }
+            }
+            &:before{
+                display: none;
+            }
+            &.testimonial_right{
+                padding-right: 0px;
+                padding-left: 110px;
+                border-left: 1px solid #e0e0e0;
+            }
+        }
+        &:last-child{
+            border: 0px;
+        }
+    }
+}
+/* End testimonial_area_three css
+============================================================================================ */
+
+.testimonial_area_four{
+    .testi_inner{
+        padding: 135px 0px 140px;
+    }
+}
+
+
+/* Start Executive Manager Profile Area css
+============================================================================================ */
+.executive_Manager_profile_area{
+    padding-top: 40px;
+}
+.manager_img{
+    margin-left: -50px;
+    img{
+        max-width: 100%
+    }
+}
+.manager_description{
+    padding-top: 50px;
+    padding-left: 50px;
+    .left_title{
+        padding-bottom: 25px;
+    }
+    h5{
+        font: 300 22px/28px $lato;
+        color: $dip;
+        letter-spacing: 0.44px;
+        padding-bottom: 30px;
+    }
+    p{
+        font: 400 17px/28px $lato;
+        color: #898989;
+        letter-spacing: 0.36px;
+    }
+    .sign{
+        display: inline-block;
+        margin-top: 40px;
+    }
+}
+
+/* End Executive Manager Profile Area css
+============================================================================================ */

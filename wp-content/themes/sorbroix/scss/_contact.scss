@@ -1,0 +1,494 @@
+/* Querry Contact Area css
+============================================================================================ */
+.contact_querry_area{
+    position: relative;
+    z-index: 3;
+    &:before{
+        content: "";
+        background: url(../img/contact-person.png) no-repeat scroll center right;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: -1;
+        width: 642px;
+        height: 100%;
+        background-size: cover;
+    }
+}
+.querry_contact{
+    
+}
+.contact_us_form{
+    .form-group{
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        input{
+            border: none;
+            border-radius: 0px;
+            box-shadow: none;
+            height: 55px;
+            border-bottom: 2px solid #f3f2f6;
+            padding: 0px;
+            font-size: 16px;
+            font-family: $mon;
+            color: #000;
+            background: transparent;
+            @include placeholder{
+                font-size: 16px;
+                font-family: $mon;
+                color: #000;
+            }
+            &:focus{
+                border-color: $dip;
+            }
+        }
+        textarea{
+            border: none;
+            border-radius: 0px;
+            box-shadow: none;
+            height: 155px;
+            border-bottom: 2px solid #f3f2f6;
+            padding: 10px 0px 0px 0px;
+            font-size: 16px;
+            font-family: $mon;
+            color: #000;
+            resize: none;
+            background: transparent;
+            @include placeholder{
+                font-size: 16px;
+                font-family: $mon;
+                color: #000;
+            }
+            &:focus{
+                border-color: $dip;
+            }
+        }    
+    }
+}
+.querry_text{
+    h6{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: $mon;
+        font-weight: bold;
+        color: rgba(9, 9, 19, .40);
+        padding-bottom: 27px;
+    }
+    h3{}
+    h5{
+        font-size: 24px;
+        font-family: $mon;
+        font-weight: 300;
+        color: #8e8e8e;
+        letter-spacing: .48px;
+        padding: 40px 0px 20px 0px;
+    }
+    h4{
+        font-family: $mon;
+        font-weight: bold;
+        font-size: 34px;
+        color: $dip;
+        letter-spacing: .68px;
+    }
+}
+
+.contact_address{
+    margin-top: 50px;
+    .c_address_item{
+        margin-bottom: 36px;
+        h5{
+            font-size: 14px;
+            font-family: $mon;
+            color: $baseColor;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding-bottom: 8px;
+        }
+        p{
+            font-size: 16px;
+            font-family: $mon;
+            color: $dip;
+            line-height: 24px;
+        }
+        a{
+            font-size: 16px;
+            font-family: $mon;
+            color: $dip;
+            line-height: 24px;
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+.contact_map_area{
+    
+}
+.mapBox1{
+    min-height: 470px;
+}
+/* End Querry Contact Area css
+============================================================================================ */
+
+/* Start Contact Querry Area Two css
+============================================================================================ */
+.contact_querry_area_two{
+    position: relative;
+    background: #2d2b34;
+    &:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../img/contact-bg-person.png") no-repeat scroll center right;
+        opacity: 0.22;
+        z-index: -1;
+    }
+    .contact_us_form{
+        .form-group{
+            input{
+                color: rgba(255, 255, 255, 0.70);
+                border-color: #3d3b44;
+                @include placeholder{
+                    color: rgba(255, 255, 255, 0.70);
+                }
+            }
+            textarea{
+                color: rgba(255, 255, 255, 0.70);
+                border-color: #3d3b44;
+                @include placeholder{
+                    color: rgba(255, 255, 255, 0.70);
+                }
+            }
+        }
+    }
+    .querry_text{
+        h6{
+            color: rgba(255, 255, 255, 0.40);
+        }
+        .single_bar_title,h5{
+            color: #fff;
+        }
+        h4{
+            color: #e2a062;
+        }
+    }
+}
+/* End Contact Querry Area Two css
+============================================================================================ */
+
+/* Start Contact Querry Area Three css
+============================================================================================ */
+.contact_querry_area_three{
+    
+}
+.contact_querry_left{
+    padding: 100px 0px;
+    .left_title{
+        padding-bottom: 30px;
+    }
+    .querry_contact{
+        max-width: 700px;
+        margin: 0px 0px 0px auto;
+        padding-right: 100px;
+        .contact_us_form{
+            .form-group{
+                padding: 0px;
+            }
+        }
+    }
+}
+.contact_querry_right{
+    padding: 0px;
+    #mapBox{
+        min-height: 690px;
+    }
+}
+/* End Contact Querry Area Three css
+============================================================================================ */
+
+.subcribe_area{
+    background: #5e5f60;
+    position: relative;
+    z-index: 1;
+    padding: 40px 0px;
+    &:before{
+        content: '';
+        background: url(../img/email.png) no-repeat scroll center 0;
+        background-size: cover;
+        top: 0px;
+        position: absolute;
+        left: 33%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: -1;
+        width: 287px;
+        height: 100%;
+        display: block;
+    }
+}
+.subcribe-content{
+    padding-left: 40px;
+    h2{
+        font: 700 32px/34px $mon;
+        color: #fff;
+        padding-bottom: 10px;
+    }
+    p{
+        color: rgba(255, 255, 255, 0.70);
+        font: 400 17px/22px $lato;
+        letter-spacing: 0.34px;
+    }
+}
+.news-form{
+    padding-top: 5px;
+    .input-group{
+        .form-control{
+            font: 400 16px/38px $mon;
+            color: #797979;
+            border: 0px;
+            border-radius: 4px;
+            background: #fff;
+            width: 95%;
+            padding: 10px 20px;
+            height: auto;
+            @include placeholder{
+                color: #797979;
+            }
+        }
+        .input-group-btn{
+            .submit_btn{
+                height: 58px;
+                border-radius: 4px;
+            }
+        }
+        
+    }
+}
+
+
+
+
+/* Search Popup Area css
+============================================================================================ */
+.search_area{
+    position: relative;
+    max-width: 950px;
+    margin: auto;
+    .search_box_inner{
+        background: #2d2b34;
+        padding: 100px 60px;
+        display: block;
+        overflow: hidden;
+        h3{
+            padding-bottom: 20px;
+            font-family: $mon;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #fff;
+            letter-spacing: .48px;
+        }
+        .input-group{
+            display: block;
+            position: relative;
+            input{
+                background: transparent;
+                border-radius: 0px;
+                outline: none;
+                height: 50px;
+                padding: 0px;
+                border: none;
+                outline: none;
+                box-shadow: none;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.20);
+                color: #666;
+                font-family: $mon;
+                font-size: 14px;
+                letter-spacing: .28px;
+                @include placeholder{
+                    color: #666;
+                    font-family: $mon;
+                    font-size: 14px;
+                    letter-spacing: .28px;
+                }
+            }
+            .input-group-btn{
+                position: absolute;
+                right: 5px;
+                top: 12px;
+                z-index: 4;
+                .btn-default{
+                    padding: 0px;
+                    border: none;
+                    outline: none !important;
+                    box-shadow: none !important;
+                    background: transparent;
+                    color: #666;
+                    font-family: $mon;
+                    font-size: 16px;
+                    letter-spacing: .28px;
+                }
+            }
+        }
+    }
+    .mfp-close{
+        right: 0px;
+        color: #fff;
+    }
+}
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out; 
+
+
+
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+
+	-webkit-transform: scale(1); 
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	transform: scale(1); 
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+
+	opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+
+/**
+ * Fade-move animation for second dialog
+ */
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+/* End Search Popup Area css
+============================================================================================ */
+
+
+/* Contact Success and error Area css
+============================================================================================ */
+.modal-message{
+    .modal-dialog{
+        margin-top: 130px;
+        .modal-content{
+            .modal-header{
+                text-align: center;
+                .modal-title{
+                    padding-top: 80px;
+                    color: $baseColor;
+                    font-size: 45px;
+                    font-family: $mon;
+                    letter-spacing: .80px;
+                }
+                .modal-subtitle{
+                    padding-bottom: 90px;
+                    font-size: 16px;
+                    color: $pfont;
+                    font-family: $mon;
+                    letter-spacing: .45px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
+/* End Contact Success and error Area css
+============================================================================================ */

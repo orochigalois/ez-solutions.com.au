@@ -1,0 +1,37 @@
+/* Projects Area css
+============================================================================================ */
+.projects_area{
+    .our_case_inner{
+        margin-top: -50px;
+        .cases_item{
+            margin-top: 50px;
+        }
+    }
+}
+.fillter_two{
+    li{
+        &.active,&:hover{
+            a{
+                color: #e2a062;
+                border-color: #e2a062;
+            }
+        }
+    }
+}
+
+/* Projects Area css
+============================================================================================ */
+
+/* Projects Full Area css
+============================================================================================ */
+.project_full_inner{
+    margin: -48px 0px 0px;
+}
+.project_full_item{
+    padding: 0px 15px;
+    width: calc(100% / 5);
+    float: left;
+    margin-top: 48px;
+}
+/* Projects Full Area css
+============================================================================================ */

@@ -1,0 +1,197 @@
+/* Feature Area css
+============================================================================================ */
+.welcome_area{
+    
+}
+.welcome_area{
+    
+}
+.welcome_f_item{
+    text-align: center;
+    position: relative;
+    padding-bottom: 38px;
+    &:before{
+        content: "";
+        width: 83px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0px;
+        height: 2px;
+        position: absolute;
+        background: #cbcbcb;
+    }
+    i{
+        font-size: 60px;
+        color: $baseColor;
+        line-height: 60px;
+        &:before{
+            font-size: 60px;
+        }
+    }
+    h4{
+        font-size: 22px;
+        color: $dip;
+        font-family: $mon;
+        font-weight: 600;
+        padding: 18px 0px 18px 0px;
+    }
+    p{
+        font-size: 16px;
+        font-family: $lato;
+        color: $pfont;
+        line-height: 26px;
+        letter-spacing: .32px;
+    }
+}
+/* End Feature Area css
+============================================================================================ */
+
+/* Faq Area css
+============================================================================================ */
+.faq_area{
+    .faq_inner{
+        .c_left_title{
+        }
+        .input-group{
+            display: block;
+            background: #f2f2f2;
+            overflow: hidden;
+            margin-left: -10px;
+            margin-right: -10px;
+            padding: 10px 10px;
+            border-radius: 5px;
+            height: 80px;
+            position: relative;
+            input{
+                height: 60px;
+                border: 1px solid #e0e0e0;
+                border-radius: 5px;
+                padding: 0px 24px;
+                font-size: 16px;
+                box-shadow: none;
+                outline: none;
+                font-family: $mon;
+                color: rgba(0, 0, 0, .5);
+                letter-spacing: .32px;
+                @include placeholder{
+                    font-size: 16px;
+                    font-family: $mon;
+                    color: rgba(0, 0, 0, .5);
+                    letter-spacing: .32px;
+                }
+            }
+            .input-group-btn{
+                display: block;
+                width: auto;
+                position: absolute;
+                right: 35px;
+                z-index: 5;
+                top: 50%;
+                transform: translateY(-50%);
+                .btn-default{
+                    padding: 0px;
+                    border: none;
+                    background: transparent;
+                }    
+            }
+        }
+    }
+}
+
+.faq_collaps{
+    margin-top: 60px;
+    .panel-group{
+        .panel-default{
+            border: none;
+            box-shadow: none;
+            margin-bottom: 48px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            .panel-heading{
+                padding: 0px;
+                background: transparent;
+                border: none;
+                .panel-title{
+                    a{
+                        font-size: 20px;
+                        color: #000000;
+                        font-family: $mon;
+                        font-weight: 600;
+                        padding-left: 25px;
+                        position: relative;
+                        display: block;
+                        line-height: 26px;
+                        i{
+                            display: none;
+                            position: absolute;
+                            left: 0px;
+                            top: 1px;
+                            font-style: normal;
+                            & + i{
+                                display: inline-block;
+                            }
+                        }
+                        &.collapsed{
+                            i{
+                                display: inline-block;
+                                & + i{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .panel-collapse{
+                .panel-body{
+                    border: none;
+                    padding: 18px 20px 0px 25px;
+                    font-size: 17px;
+                    line-height: 28px;
+                    font-family: $mon;
+                    color: $pfont;
+                }
+            }
+        }    
+    }
+}
+
+.question_area{
+    background: #f8f8f8;
+    .c_left_title{
+        padding-bottom: 55px;
+    }
+    .querry_contact{
+        .contact_us_form{
+            .form-group{
+                &:last-child{
+                    margin-top: 5px;
+                }
+                input{
+                    border-color: #e3e3e3;
+                    color: rgba(0, 0, 10, .70);
+                    @include placeholder{
+                        color: rgba(0, 0, 10, .70);
+                    }
+                    &:focus{
+                        border-color: $dip;
+                    }
+                }
+                textarea{
+                    border-color: #e3e3e3;
+                    color: rgba(0, 0, 10, .70);
+                    @include placeholder{
+                        color: rgba(0, 0, 10, .70);
+                    }
+                    &:focus{
+                        border-color: $dip;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* End Faq Area css
+============================================================================================ */

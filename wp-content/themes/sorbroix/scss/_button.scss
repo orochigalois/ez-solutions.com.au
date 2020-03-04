@@ -1,0 +1,162 @@
+/* Button Area css
+============================================================================================ */
+.learn_btn{
+    background: $baseColor;
+    line-height: 50px;
+    border-radius: 3px;
+    padding: 0px 25px;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-family: $mon;
+    font-weight: 600;
+    letter-spacing: .32px;
+    transition: all 0.4s linear !important;
+    &:hover{
+        background: $baseColorh;
+        color: #fff;
+    }
+}
+
+.read_all{
+    font-size: 16px;
+    font-family: $mon;
+    color: #33303d;
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    &:before{
+        content: "";
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        bottom: 1px;
+        background: #949399;
+    }
+    &:after{
+        content: "";
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        bottom: 2px;
+        background: #adabb0;
+    }
+}
+
+
+
+.submit_btn{
+    background: $baseColor;
+    line-height: 50px;
+    border-radius: 3px;
+    padding: 0px 25px;
+    display: inline-block;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px;
+    width: 172px;
+    text-align: center;
+    color: #fff;
+    font-family: $mon;
+    font-weight: 600;
+    letter-spacing: .32px;
+    @include transition;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none;
+    &:hover, &.focus{
+        background: $baseColorh;
+        color: #fff;
+    }
+}
+
+.submit_btn_b{
+    height: 50px;
+    padding: 0px;
+    line-height: 50px;
+    padding: 0px 36px;
+    color: #fff;
+    background: #292a2a;
+    border-radius: 4px !important;
+    border: none;
+    font-family: $mon;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .32px;
+    outline: none !important;
+    box-shadow: none !important;
+    @include transition;
+    margin: 0px;
+    &:hover, &:focus{
+        background: #1a191e;
+        color: #fff;
+    }    
+}
+.read_btn{
+    display: inline-block;
+    padding: 0px 30px;
+    border: 1px solid #adadad;
+    line-height: 40px;
+    font-family: $mon;
+    font-size: 16px;
+    font-weight: 500;
+    color: $pfont;
+    border-radius: 3px;
+    @include transition;
+    &:hover{
+        background: $baseColor;
+        color: #fff;
+        border-color: $baseColor;
+    }
+}
+
+.slider_btn{
+    width: 172px;
+    text-align: center !important;
+}
+//.slider_btn{
+//    font: 600 16px/30px $mon;
+//    color: #fff;
+//    letter-spacing: 0.32px;
+//    padding: 10px 10px;
+//    text-align: center;
+//    border: 1px solid #fff;
+//    width: 172px;
+//    display: inline-block;
+//    border-radius: 3px;
+//    transition: all 0.4s linear;
+//    & + .slider_btn{
+//        margin-left: 30px;
+//    }
+//    &.btn_one{
+//        background: #38373d;
+//        color: #fff;
+//        border-color: #38373d;
+//        &:hover{
+//            background: transparent;
+//            border-color: #fff;
+//        }
+//    }
+//    &:hover{
+//        background: #38373d;
+//        color: #fff;
+//        border-color: #38373d;
+//    }
+//}
+
+//.slider_btn{
+//    font: 600 16px/30px $mon;
+//    color: #fff;
+//    letter-spacing: 0.32px;
+//    background: $baseColor;
+//    padding: 10px 32px;
+//    border-radius: 3px;
+//    display: block;
+//    &:hover{
+//        
+//    }
+//}
+/* Button Area css
+============================================================================================ */

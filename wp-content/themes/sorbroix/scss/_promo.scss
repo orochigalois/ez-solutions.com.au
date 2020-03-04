@@ -1,0 +1,305 @@
+/*h-promo-area css
+==========================================================*/
+
+.h-promo-area{
+    z-index: 20;
+    position: relative;
+}
+.promo-item{
+    padding: 0px;
+    background: #dc995a;
+    min-height: 272px;
+    position: relative;
+    overflow: hidden;
+    img{
+        opacity: 0.10;
+        position: absolute;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .promo-content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        margin: 0px;
+        padding: 0px 80px;
+        .media-left{
+            padding-right: 30px;
+            i{
+                font-size: 50px;
+                line-height: 50px;
+                &:before{
+                    font-size: 50px;
+                }
+            }
+        }
+        .media-body{
+            h2{
+                font: 600 30px/35px $mon;
+                padding-bottom: 10px;
+            }
+            p{
+                font-size: 17px;
+                line-height: 26px;
+                letter-spacing: 0.34px;
+            }
+        }
+    }
+    &.promo2{
+        background: #232323;
+        margin-top: -18px;
+        min-height: 290px;
+    }
+    &.promo3{
+        background: #3c394c;
+    }
+}
+/*h-promo-area css
+==========================================================*/
+
+
+
+/*Our-mission-area css
+==========================================================*/
+.our-mission-area{
+    background: #f6f6f6;
+}
+.mission-content{
+    font-family: $lato;
+    h3{
+        font-size: 22px;
+        line-height: 26px;
+        color: $dip;
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+    p{
+        font-size: 17px;
+        padding-bottom: 18px;
+    }
+    .media{
+        .media-left{
+            padding-right: 35px;
+        }
+        .media-body{
+            vertical-align: middle;
+            a{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.faq_accordian{
+    .left_title{
+        padding-bottom: 30px;
+    }
+    .panel-group{
+        margin-bottom: 0px;
+        .panel{
+            border-radius: 0px;
+            border: 1px solid #eaeaea;
+            box-shadow: none;
+            .panel-heading{
+                background: transparent;
+                padding: 0px;
+                .panel-title{
+                    a{
+                        display: block;
+                        font: 400 18px/26px $lato;
+                        color: #000000;
+                        letter-spacing: 0.54px;
+                        background: #ffffff;
+                        position: relative;
+                        padding: 16px 10px 16px 50px;
+                        i{
+                            font-size: 25px;
+                            color: #aeaeae;
+                            font-family: $open;
+                            display: none;
+                            position: absolute;
+                            left: 22px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-style: normal;
+                            font-weight: 700;
+                            & + i{
+                                display: inline-block;
+                            }
+                        }
+                        &.collapsed{
+                            i{
+                                display: inline-block;
+                                & + i{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .panel-body{
+                border: 0px;
+                font: 400 17px/28px $lato;
+                letter-spacing: 0.54px;
+                padding: 0px 50px 20px;
+            }
+            & + .panel{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+/*Our-mission-area css
+==========================================================*/
+
+/* Start About_firm_area css
+==========================================================*/
+.about_firm_area{
+    .about_firm_image{
+        padding-top: 8px;
+        .item{
+            display: inline-block;
+            width: 43%;
+            img{
+                max-width: 100%;
+                width: 100%;
+            }
+            & + .item{
+                margin-left: 7px;
+                width: 47.5%;
+            }
+        }
+    }
+    .video_left_text{
+        padding-right: 0px;
+        h3{
+            font-size: 34px;
+            padding-bottom: 25px;
+        }
+    }
+}
+
+/* End About_firm_area css
+==========================================================*/
+
+
+.expert_area{
+    margin-top: -60px;
+    .expert_img{}
+    
+}
+.expert_item{
+    .expert_content{
+        background: #1e1e1e;
+        .content{
+            padding: 73px 70px;
+            h2{
+                font: 700 45px/50px $mon;
+                color: $baseColor;
+            } 
+            p{
+                font: 400 17px/26px $lato;
+                letter-spacing: 0.34px;
+                color: #b5b5b5;
+                padding: 38px 0px 40px;
+            }
+            .submit_btn_b{
+                display: inline-block;
+                background: transparent;
+                border: 1px solid #fff;
+                &:hover{
+                    background: #1a191e;
+                    color: #fff;
+                    border-color: #1a191e;
+                }
+            }
+        }
+        &.expert-content-two{
+            background: #2d2b34;
+            h4{
+                font: 600 22px/32px $mon;
+                color: #fff;
+                padding: 20px 0px 8px;
+            }
+            .ex_list{
+                li{
+                    font: 400 17px/22px $mon;
+                    color: #adacb1;
+                    position: relative;
+                    padding-left: 25px;
+                    margin-top: 22px;
+                    i{
+                        position: absolute;
+                        left: 0;
+                        top: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*error_area css
+=========================================*/
+
+.error_area{
+    background: url(../img/overview/404-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    &:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: 0.70;
+        position: absolute;
+        z-index: -1;
+    }
+    .error_inner_content{
+        position: relative;
+        z-index: 1;
+        width: 10000px;
+        display: table-cell;
+        vertical-align: middle;
+        height: 100vh;
+        color: #fff;
+        font-family: $mon;
+        h1{
+            font-size: 200px;
+            font-weight: 700;
+            line-height: 200px;
+        }
+        h2{
+            font-size: 50px;
+            line-height: 53px;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 25px;
+            line-height: 53px;
+            letter-spacing: 0.65px;
+            font-weight: 600;
+            padding-bottom: 42px;
+        }
+        .learn_btn{
+            font-weight: 700;
+            letter-spacing: 0.48px;
+            width: 310px;
+            height: 75px;
+            line-height: 75px;
+            font-size: 24px;
+        }
+    }
+}
