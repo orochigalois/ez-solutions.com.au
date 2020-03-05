@@ -885,6 +885,11 @@ i:before {
 .header_logo_area .logo {
   line-height: 50px;
   display: block;
+  width: 180px;
+}
+
+.header_logo_area .logo img{
+  margin: 0;
 }
 
 .header_logo_area .pull-right {
