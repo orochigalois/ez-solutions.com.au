@@ -3472,6 +3472,11 @@ i:before {
   cursor: pointer;
 }
 
+
+.welcome_info .welcome_item:first-child {
+  margin-bottom: 0px;
+}
+
 .welcome_info .welcome_item .media .media-left {
   padding-right: 30px;
 }
