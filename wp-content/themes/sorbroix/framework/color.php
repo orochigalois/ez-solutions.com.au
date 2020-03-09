@@ -2615,7 +2615,7 @@ i:before {
   height: 100%;
   top: 0;
   left: 0;
-  background: #8d442f;
+  background: #010203;
   opacity: 0.50;
   position: absolute;
 }

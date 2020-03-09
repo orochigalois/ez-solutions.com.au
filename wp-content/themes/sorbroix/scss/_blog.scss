@@ -10,9 +10,9 @@
             padding-top: 5px;
             transition: all 0.3s linear;
             &:hover{
-                color: #e2a062;
+                color: #0a0b0c;
                 &:before,&:after{
-                    background: #e2a062;
+                    background: #0a0b0c;
                 }
             }
         }
@@ -91,7 +91,7 @@
         }
     }
     &:hover{
-        background: #e2a062;
+        background: #0a0b0c;
         h5,p,h4,h4 a{
             color: #fff;
         }
@@ -143,7 +143,7 @@
         }
     }
     .read_all{
-        color: #e2a062;
+        color: #0a0b0c;
         &:after{
             background: #6d553f;
         }

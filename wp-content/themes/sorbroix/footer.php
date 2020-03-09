@@ -2,22 +2,12 @@
 <footer class="footer_weidget_area">
             <div class="container">
                 <div class="row f_widget_inner">
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="col-sm-6 col-xs-6">
                         <?php if ( is_active_sidebar( 'footer-area-1' ) ) : ?>
                             <?php dynamic_sidebar( 'footer-area-1' ); ?>
                         <?php endif; ?> 
                     </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <?php if ( is_active_sidebar( 'footer-area-2' ) ) : ?>
-                            <?php dynamic_sidebar( 'footer-area-2' ); ?>
-                        <?php endif; ?> 
-                    </div>
-                    <div class="col-sm-2 col-xs-6">
-                        <?php if ( is_active_sidebar( 'footer-area-3' ) ) : ?>
-                            <?php dynamic_sidebar( 'footer-area-3' ); ?>
-                        <?php endif; ?> 
-                    </div>
-                    <div class="col-sm-4 col-xs-6">
+                    <div class="col-sm-6 col-xs-6">
                         <?php if ( is_active_sidebar( 'footer-area-4' ) ) : ?>
                             <?php dynamic_sidebar( 'footer-area-4' ); ?>
                         <?php endif; ?> 
