@@ -18,7 +18,7 @@ get_header(); ?>
           <h2><?php if(isset($sorbroix_redux_demo['blog_title'])){?>
                                     <?php echo wp_specialchars_decode(esc_attr($sorbroix_redux_demo['blog_title']));?>
                                     <?php }else{?>
-                                    <?php echo esc_html__( 'Blog', 'sorbroix' );
+                                    <?php echo 'News';
                                     }
                                     ?></h2>
           <ul>

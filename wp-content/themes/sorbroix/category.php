@@ -11,7 +11,7 @@ get_header(); ?>
 <?php } ?>
   <div class="container">
       <div class="banner_inner">
-          <h2><?php printf( esc_html__( 'Category Archives: %s', 'sorbroix' ), single_cat_title( '', false ) ); ?></h2>
+          <h2><?php printf( esc_html__( 'Latest News', 'sorbroix' ), single_cat_title( '', false ) ); ?></h2>
       </div>
   </div>
 </section>
